@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createCreditTransferXML should create a valid XML document 1`] = `
+"<?xml version="1.0"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>PAIN0012024052309032251</MsgId>
+      <CreDtTm>2021-01-01T00:00:00.000Z</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <CtrlSum>3434</CtrlSum>
+      <InitgPty>
+        <Nm>John Doe</Nm>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>PAIN0012024052309032251</PmtInfId>
+      <PmtMtd>TRF</PmtMtd>
+      <BtchBookg>false</BtchBookg>
+      <ReqdExctnDt>2021-01-02T00:00:00.000Z</ReqdExctnDt>
+      <Dbtr>
+        <Nm>John Doe</Nm>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>DE12100110012281061880</IBAN>
+        </Id>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BIC>DEUTDEFF</BIC>
+        </FinInstnId>
+      </DbtrAgt>
+      <CdtTrfTxInf>
+        <PmtId>
+          <EndToEndId>123456789</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">3434</InstdAmt>
+        </Amt>
+        <CdtrAgt>
+          <FinInstnId/>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>Jane Doe</Nm>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>DE12100110012281061880</IBAN>
+          </Id>
+          <Agt>
+            <FinInstnId>
+              <Othr>
+                <Id>NOTPROVIDED</Id>
+              </Othr>
+            </FinInstnId>
+          </Agt>
+          <RmtInf>
+            <Ustrd>Test</Ustrd>
+          </RmtInf>
+        </CdtrAcct>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>"
+`;
