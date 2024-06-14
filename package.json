@@ -1,6 +1,6 @@
 {
   "name": "better-sepa",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A TypeScript based SEPA XML Generator. Complying to ISO 20022 Standards. Should work with all Banks which support SEPA XML Upload.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
